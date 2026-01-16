@@ -1,0 +1,144 @@
+/* OTP Verification Page Styles */
+.otp-verification-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background: radial-gradient(1200px 600px at 20% 10%, #e8fff4 0%, #f6f9fc 40%, #eef2f7 100%);
+  font-family: "Roboto", sans-serif;
+}
+
+.otp-container {
+  width: 100%;
+  max-width: 440px;
+  padding: 48px 32px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 50px rgba(12, 187, 105, 0.12);
+  backdrop-filter: saturate(180%) blur(12px);
+  border: 1px solid rgba(12, 187, 105, 0.12);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.otp-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 60px rgba(12, 187, 105, 0.15);
+}
+
+.otp-header {
+  margin-bottom: 32px;
+}
+
+.otp-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.otp-subtitle {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.otp-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.otp-input {
+  width: 64px;
+  height: 64px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #f9fafb;
+  color: #1a1a1a;
+  caret-color: #0cbb69;
+}
+
+.otp-input::placeholder {
+  color: #d1d5db;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.otp-input:hover {
+  border-color: #d1d5db;
+  background: #ffffff;
+}
+
+.otp-input:focus {
+  border-color: #0cbb69;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(12, 187, 105, 0.1);
+}
+
+.otp-input.filled {
+  border-color: #0cbb69;
+  background: rgba(12, 187, 105, 0.05);
+  color: #0cbb69;
+}
+
+.verify-button {
+  background: linear-gradient(135deg, #0cbb69 0%, #09a85c 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(12, 187, 105, 0.3);
+}
+
+.verify-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(12, 187, 105, 0.4);
+  background: linear-gradient(135deg, #09a85c 0%, #078a4a 100%);
+}
+
+.verify-button:active {
+  transform: translateY(0);
+}
+
+.resend-info {
+  color: #9ca3af;
+  font-size: 13px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.resend-link {
+  color: #0cbb69;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resend-link:hover {
+  color: #09a85c;
+  text-decoration: underline;
+}
